@@ -332,7 +332,57 @@ They locate the door that describes their current reality. They click. They step
 
 ---
 
-### 6. Visual Language
+### 6. The Sequence of Moments
+
+The following timeline details the visitor’s progression through the homepage, mapped out in cinematic, five-to-ten-second intervals of conscious experience.
+
+```
+0s                  15s                 30s                 45s                 60s+
+┌───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+│ Moment 1          │ Moment 2          │ Moment 3          │ Moment 4          │ Moment 5          │
+│ Silence & Breath  │ The Echo          │ The Lifeline      │ The Reflection    │ The Choice        │
+│ (0s - 10s)        │ (10s - 20s)       │ (20s - 35s)       │ (35s - 50s)       │ (50s+)            │
+└───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+```
+
+#### Moment 1: Silence & Breath (Seconds 0 – 10)
+*   **What the User Sees:** A clean, wide expanse of soft, chalky white plaster. In the center, set in elegant, low-contrast ink, is the phrase: *“We spend our lives making career choices. We spend very little time understanding them.”* There is no loading bar, no navigation bar, and no buttons.
+*   **What They Do:** They pause. They release their grip on the mouse. They read the sentence, then read it again.
+*   **What They Feel:** A sudden drop in cognitive volume; a physical sigh of relief. The feeling resembles steping from a crowded city sidewalk into the vaulted hall of a quiet museum.
+*   **What Question is Answered:** *"Is this place going to scream at me to buy something?"* (Answer: No. This space respects my mind.)
+*   **What Curiosity is Created:** *"Who built this, and why are they starting with a truth instead of a sale?"*
+
+#### Moment 2: The Echo (Seconds 10 – 20)
+*   **What the User Sees:** As they scroll, the white background dissolves into a warm, silent, deep-charcoal darkness. The darkness doesn't feel cold; it feels protective. Illuminated in the center is a singular question: *“Where does your ambition go when it no longer fits your calendar?”* Muted, warm-gray text fades in below it.
+*   **What They Do:** They scroll slowly, matching the natural, decelerating weight of the transition. They linger on the words.
+*   **What They Feel:** A prickle of self-recognition; vulnerability. A deep sense of validation that their private, unspoken restlessness is not a personal failure, but a shared human phenomenon.
+*   **What Question is Answered:** *"Does this platform actually understand my personal situation?"* (Answer: Yes, it speaks directly to the silent pressure I carry inside.)
+*   **What Curiosity is Created:** *"If this transition is natural, where does it lead? What is the alternative to feeling stuck?"*
+
+#### Moment 3: The Lifeline (Seconds 20 – 35)
+*   **What the User Sees:** The dark charcoal softens back into a natural limestone-gray. On the left is the headline: *“A career is a sequence of horizons.”* On the right is a stunning, warm portrait of *Leo*, an eighteen-year-old student, sitting quietly on concrete steps. Below is a beautifully simple horizontal timeline with a brass slider handle.
+*   **What They Do:** Intrigued by the timeline, they click the brass handle and slowly drag it to the right.
+*   **What They Feel:** Playfulness, texture, and fascination. They feel a tactile connection to the interface as if they are handling a physical object or scrubbing a piece of cinema.
+*   **What Question is Answered:** *"Is CareerFlyght only for people like me, or is career-decision making a broader problem?"* (Answer: It is a lifelong human cycle that spans generations.)
+*   **What Curiosity is Created:** *"Who are these other people along the timeline? What do their transitions look like, and which one aligns with mine?"*
+
+#### Moment 4: The Reflection (Seconds 35 – 50)
+*   **What the User Sees:** As they drag the timeline dial, they watch the portraits smoothly cross-fade: *Leo* becomes *Elena* (the architect transitioning at 32), who becomes *Marcus* (the executive seeking legacy at 48). The narrative copy dissolves in real-time, matching each life stage with quiet, profound prose.
+*   **What They Do:** They scrub back and forth. They pause on the age range closest to their own life. They read the story fragment of that person.
+*   **What They Feel:** Shared empathy; relief. Seeing other people of different ages captured in beautiful, authentic moments of transition removes the isolation of their own career crossroads.
+*   **What Question is Answered:** *"How does CareerFlyght define career development?"* (Answer: Not as a one-time job hunt, but as a continuous cycle of personal alignment.)
+*   **What Curiosity is Created:** *"Now that I see where I fit in this continuous landscape, what specific door has CareerFlyght built for me to enter?"*
+
+#### Moment 5: The Choice (Seconds 50+)
+*   **What the User Sees:** They scroll past the timeline. The layout opens into four structural columns under a soft light. Each represents a distinct path: *WhatCanIBe*, *9thBox*, *CareerFlyght Executive*, and *CHRO4SME*. There are no flashy badges or pricing callouts. Only clear designations and precise audience markers.
+*   **What They Do:** They hover their cursor over the column that describes their stage. They watch the other columns softly dim, bringing their chosen path into perfect focus.
+*   **What They Feel:** Agency, readiness, and a quiet confidence. They do not feel pushed down a conversion funnel; they feel like they have arrived at an open door that was custom-built for them.
+*   **What Question is Answered:** *"What are the practical products within this ecosystem, and which one is mine?"* (Answer: There is a highly specific, mature product dedicated entirely to my current stage.)
+*   **What Curiosity is Created:** *"What lies beyond this doorway? What does the first step of my transition look like?"*
+
+---
+
+### 7. Visual Language
 
 Our visual language is a deliberate rejection of modern SaaS design trends. We do not use hyper-saturated colors, complex gradient meshes, floating cards with drop shadows, or playful geometric illustrations. We build for permanence.
 
@@ -377,7 +427,7 @@ Our palette is sourced entirely from natural, raw materials. It is organic, tact
 
 ---
 
-### 7. Interaction Principles
+### 8. Interaction Principles
 
 #### How Motion Behaves
 Every motion on the homepage must feel like a physical interaction. If an element shifts, it must do so with natural deceleration. The easing curves must favor a long tail, meaning the motion starts deliberately and slows down over a beautiful, extended curve.
@@ -403,7 +453,7 @@ These principles exist because unpredictability in interaction creates micro-anx
 
 ---
 
-### 8. Creative Direction
+### 9. Creative Direction
 
 ```
       FILM REFERENCE                 MAGAZINE REFERENCE               SPATIAL REFERENCE
