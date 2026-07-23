@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerFlyght — What comes next?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Brand Header -->
+    <header class="brand-header">
+        <div class="brand-mark">CareerFlyght</div>
+    </header>
+
+    <!-- Main Storyboard Container -->
+    <main class="storyboard">
+
+        <!-- SECTION 1: THE HERO (Decompression) -->
+        <section class="moment hero-section active-dark-mode-off" id="hero">
+            <div class="moment-content">
+                <span class="editorial-label">Origin</span>
+                <h1 class="hero-text">We spend our lives making career choices.<br>We spend very little time understanding them.</h1>
+                <div class="scroll-indicator">
+                    <span class="scroll-arrow">↓</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE QUESTION (Introspection) -->
+        <section class="moment question-section" id="question">
+            <div class="moment-content">
+                <h2 class="candle-text">
+                    <span>Where</span> <span>does</span> <span>your</span> <span>ambition</span> <span>go</span>
+                    <span>when</span> <span>it</span> <span>no</span> <span>longer</span> <span>fits</span>
+                    <span>your</span> <span>calendar?</span>
+                </h2>
+                <p class="supporting-text">
+                    We build a life around our work, only to find the structure no longer holds who we have become.
+                    This is not a failure of drive. It is the natural signal that you are ready for what comes next.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE JOURNEY (The Lifeline Scrub) -->
+        <section class="moment journey-section" id="journey">
+            <div class="moment-content timeline-container">
+                <div class="timeline-left">
+                    <h2 class="journey-title">A career is not a vertical line.<br>It is a sequence of horizons.</h2>
+                    <p class="journey-desc">Use the timeline to traverse the stages of lifelong transition.</p>
+                </div>
+
+                <div class="timeline-right">
+                    <!-- Interactive Filmstrip Viewport -->
+                    <div class="filmstrip-viewport">
+                        <div class="portrait-container">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Leo" class="portrait active" id="portrait-leo">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800" alt="Elena" class="portrait" id="portrait-elena">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Marcus" class="portrait" id="portrait-marcus">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800" alt="Sarah" class="portrait" id="portrait-sarah">
+                        </div>
+                        <div class="metadata-container">
+                            <span class="metadata-tag" id="meta-age">AGE 18</span>
+                            <span class="metadata-state" id="meta-state">THE HORIZON</span>
+                        </div>
+                        <p class="narrative-fragment" id="narrative-text">
+                            Leo. Deciding direction before committing to a path. Discovering self-alignment before professional momentum.
+                        </p>
+                    </div>
+
+                    <!-- Physical Slider Control -->
+                    <div class="timeline-slider-wrapper">
+                        <input type="range" min="0" max="3" value="0" class="timeline-slider" id="timelineSlider" step="1">
+                        <div class="timeline-ticks">
+                            <span class="tick active" data-index="0">18</span>
+                            <span class="tick" data-index="1">32</span>
+                            <span class="tick" data-index="2">48</span>
+                            <span class="tick" data-index="3">60+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: CHOOSE YOUR PATH (Ecosystem Entryways) -->
+        <section class="moment paths-section" id="paths">
+            <div class="moment-content paths-container">
+                <div class="path-column" id="col-whatcanibe">
+                    <span class="column-stage">STUDENT</span>
+                    <h3 class="column-title">WhatCanIBe</h3>
+                    <p class="column-desc">Discovering direction before committing to a career path. Designed for students standing at the threshold of choice.</p>
+                    <a href="#" class="column-link">Enter →</a>
+                </div>
+                <div class="path-column" id="col-ninthbox">
+                    <span class="column-stage">PROFESSIONAL</span>
+                    <h3 class="column-title">9thBox</h3>
+                    <p class="column-desc">Accelerating momentum, navigating professional plateaus, and intentionally designing active transitions.</p>
+                    <a href="#" class="column-link">Enter →</a>
+                </div>
+                <div class="path-column" id="col-executive">
+                    <span class="column-stage">EXECUTIVE</span>
+                    <h3 class="column-title">CareerFlyght Executive</h3>
+                    <p class="column-desc">Aligning deep, long-standing institutional influence with a genuine sense of personal truth and legacy.</p>
+                    <a href="#" class="column-link">Enter →</a>
+                </div>
+                <div class="path-column" id="col-chro4sme">
+                    <span class="column-stage">ORGANIZATION</span>
+                    <h3 class="column-title">CHRO4SME</h3>
+                    <p class="column-desc">Reimagining structures where human potential, organizational health, and operational goals evolve as one.</p>
+                    <a href="#" class="column-link">Enter →</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="brand-footer">
+        <div class="footer-left">© 2026 CareerFlyght. All rights reserved.</div>
+        <div class="footer-right">Confidence through subtraction.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
