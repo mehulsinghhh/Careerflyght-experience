@@ -37,31 +37,37 @@ document.addEventListener('DOMContentLoaded', () => {
         momentObserver.observe(moment);
     });
 
-    /* --- 2. Section 2 Spotlight Interaction (Candlelight Words) --- */
+    /* --- 2. Spotlight Interaction (Candlelight Words with Multi-level Falloff) --- */
     const candleTextWords = document.querySelectorAll('.candle-text span');
 
-    candleTextWords.forEach((word) => {
-        word.addEventListener('mousemove', (e) => {
-            // Light up the hovered word
-            word.style.color = '#FBFBFA';
+    candleTextWords.forEach((word, index) => {
+        word.addEventListener('mouseenter', () => {
+            word.style.color = 'var(--color-chalk)';
 
-            // Subtly light up neighboring words for organic falloff
-            const prev = word.previousElementSibling;
-            const next = word.nextElementSibling;
-            if (prev) prev.classList.add('near-spotlight');
-            if (next) next.classList.add('near-spotlight');
+            // Level 1 Falloff (immediate neighbors)
+            const prev1 = candleTextWords[index - 1];
+            const next1 = candleTextWords[index + 1];
+            if (prev1) prev1.classList.add('near-spotlight');
+            if (next1) next1.classList.add('near-spotlight');
+
+            // Level 2 Falloff (outer neighbors)
+            const prev2 = candleTextWords[index - 2];
+            const next2 = candleTextWords[index + 2];
+            if (prev2) prev2.classList.add('near-spotlight-outer');
+            if (next2) next2.classList.add('near-spotlight-outer');
         });
 
         word.addEventListener('mouseleave', () => {
             word.style.color = '';
-            const prev = word.previousElementSibling;
-            const next = word.nextElementSibling;
-            if (prev) prev.classList.remove('near-spotlight');
-            if (next) next.classList.remove('near-spotlight');
+
+            candleTextWords.forEach(w => {
+                w.classList.remove('near-spotlight');
+                w.classList.remove('near-spotlight-outer');
+            });
         });
     });
 
-    /* --- 3. Section 3: The Lifeline Scrub --- */
+    /* --- 3. Section 3: The Journey (Bespoke Fine-Instrument Slider) --- */
     const timelineData = [
         {
             age: "AGE 18",
@@ -111,14 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
             currentImg.classList.add('active');
         }
 
-        // Dissolve text cleanly
+        // Dissolve text cleanly using elegant transform offset
         narrativeText.style.opacity = '0';
+        narrativeText.style.transform = 'translateY(10px)';
+
         setTimeout(() => {
             metaAge.textContent = data.age;
             metaState.textContent = data.state;
             narrativeText.textContent = data.text;
             narrativeText.style.opacity = '1';
-        }, 250);
+            narrativeText.style.transform = 'translateY(0)';
+        }, 300);
 
         // Update tick active status
         ticks.forEach((tick, tickIdx) => {
@@ -152,9 +161,9 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- 4. Section 4 Column Hover Redirection --- */
     const pathColumns = document.querySelectorAll('.path-column');
     pathColumns.forEach(col => {
-        col.addEventListener('click', () => {
+        col.addEventListener('click', (e) => {
             const link = col.querySelector('.column-link');
-            if (link) {
+            if (link && e.target !== link) {
                 link.click();
             }
         });
