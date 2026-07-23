@@ -55,8 +55,8 @@ The homepage layout is strictly linear, deliberate, and uncluttered. Every eleme
     *   *Justification:* A clean entry point with zero navigation clutter. Its sole job is to establish the tone, the pace, and the spatial atmosphere.
 2.  **The Question (Introspection)**
     *   *Justification:* Before introducing CareerFlyght, we must validate the visitor's internal state. It places the user's emotional reality at the absolute center of the experience.
-3.  **The Journey (Contextualization)**
-    *   *Justification:* Introduces the underlying philosophy of CareerFlyght: career development is not a singular event (like finding a job) but a continuous, lifelong series of decisions. It contextualizes the platform's purpose.
+3.  **The Journey (Contextualization & Interactive Horizon)**
+    *   *Justification:* Introduces the underlying philosophy of CareerFlyght through a tactile, exploratory interaction. Instead of reading an essay, the visitor visually traverses life phases, making the continuous nature of career decisions tangible and deeply engaging.
 4.  **Choose Your Path (The Ecosystem)**
     *   *Justification:* This is the gentle transition into action. Having established the philosophy and validated the emotional state, we present four precise doorways (WhatCanIBe, 9thBox, CareerFlyght Executive, CHRO4SME) designed for specific life stages.
 
@@ -167,46 +167,70 @@ The user experiences a moment of self-reflection. The question resonates with th
 #### Section 3: The Journey
 
 ##### Purpose
-To introduce the philosophy of CareerFlyght—that career progression is not a ladder to be climbed or a single destination to be reached, but a continuous lifelong sequence of decisions.
+Instead of an expository essay, this section is a tactile, interactive visual experience called **The Lifeline Scrub**. It visualizes the core philosophy of CareerFlyght—that career progression is a lifelong series of horizons—by allowing the user to scrub through time, witnessing authentic human transitions unfold.
 
 ##### Visitor Emotion
-A sense of scale, relief, and structured progression. The relief of realizing that transitions are not failures, but natural phases.
+Playfulness, emotional resonance, and deep engagement. The joy of discovery as they actively explore lives in motion.
 
 ##### Visual Composition
-An editorial spread reminiscent of an international design biannual. The left half of the space contains a beautifully set column of narrative text. The right half contains a single, high-art photographic portrait. There is an expansive horizontal grid separating the text from the image, creating a feeling of editorial weight and permanence.
+An expansive horizontal landscape.
+*   **The Left Side:** A single static, large, and elegant headline: *“A career is not a vertical line. It is a sequence of horizons.”*
+*   **The Center/Right:** A cinematic, horizontal filmstrip viewport showing a high-art portrait of a human subject.
+*   **The Bottom:** A beautifully minimal, tactile timeline track labeled with ages ($16 \longrightarrow 60+$). A circular brass slider knob rests on the timeline, inviting interaction.
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│  A career is                                                           │
+│  not a vertical                              [ PHOTO VIEWPORT ]        │
+│  line. It is                                                           │
+│  a sequence                                                            │
+│  of horizons.                            (A portrait in natural light) │
+│                                                                        │
+│                      [---------O------------------------]              │
+│                      16       32                       60+             │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
 ##### Typography Hierarchy
-*   **The Insight (Primary):** Medium-large serif headline, set with high editorial elegance.
-*   **The Narrative (Secondary):** A comfortable, readable size of serif body text, optimized for long-form reading. It reads like a column from an essay.
+*   **The Concept (Primary):** Large, elegant serif statement on the left.
+*   **The Interactive Metadata (Secondary):** Set in a small, quiet, monospaced sans-serif that changes dynamically as the slider moves (e.g., `AGE: 32` / `TRANSITION STATE: THE IN-BETWEEN`).
+*   **The Story Fragment (Tertiary):** A short, two-sentence personal narrative that dissolves in beside the portrait, written in a comfortable, readable serif.
 
 ##### Interaction Philosophy
-As the visitor scrolls, the photographic portrait on the right moves at a slightly different speed (subtle parallax), creating depth. Hovering over the image reveals a small, elegant handwritten note detailing the subject's life transition (e.g., *“Elena. Architect, turned organic winemaker. Age 41.”*).
+*   **The Slider Scrub:** The visitor can drag the brass slider handle horizontally, or simply scroll horizontally if using a trackpad.
+*   **Dynamic Focus:** As the slider scrubs to a different age range, the photographic portrait on the right softly morphs/cross-fades to show a different human subject in their environment, accompanied by a dynamic change in the monospaced metadata and the narrative fragment.
+*   **Age Ranges & Stories:**
+    *   **Age 18 (The Beginning):** Portrait of a student sitting on concrete steps, looking over an open courtyard. *“Leo. Deciding direction before committing to a path.”*
+    *   **Age 32 (The Pivot):** Portrait of a young professional standing in an architectural studio, surrounded by physical blueprints. *“Elena. Architect, navigating the transition from structured service to independent creation.”*
+    *   **Age 48 (The Legacy):** Portrait of a senior executive sitting in a sun-drenched industrial loft, looking at a wooden desk surface. *“Marcus. Aligning organizational influence with a deeply personal desire to teach.”*
+    *   **Age 60 (The Reunion):** Portrait of an older advisor standing in an orchard, looking back towards the light. *“Sarah. Moving from operational leadership to mentorship, harvesting a lifetime of choices.”*
 
 ##### Animation Philosophy
-The transition is driven entirely by the scroll speed of the user. There are no sudden trigger animations. The photography eases in from the bottom with a soft blur reduction, mimicking an eye focusing on an image.
+The transition between subjects feels fluid, like moving through frames of a physical film reel. As the slider scrubs, the portraits do not snap; they slide horizontally with a subtle motion blur while cross-fading in opacity (400ms ease-out). The text fragments dissolve like typewriter ink fading into paper.
 
 ##### Photography Direction
-High-end, medium-format, natural-light portraiture. The subjects must look like real people captured in authentic moments of contemplation—not models, and never smiling at the camera. The setting should be natural, architectural, and filled with authentic textures (wood, concrete, natural light).
+Exquisite, medium-format, natural-light portraiture. The subjects represent diverse life stages and authentic human postures—thoughtful, calm, and captured in spaces defined by raw textures (warm concrete, raw pine, soft brick, natural glass).
 
 ##### Copywriting Style
-Intellectual, reflective, and essayistic. It explains our core worldview.
-> *“We believe a career is not a vertical line. It is a sequence of horizons. Each stage of life demands a different kind of clarity. What served you at twenty-five will not sustain you at fifty. We designed CareerFlyght to accompany you across every threshold.”*
+Poetic, personal, and brief.
+> *“What served you at twenty-five will not sustain you at fifty. Every crossing demands a new kind of clarity.”*
 
 ##### Content Hierarchy
-1.  The Philosophy Statement (Left column, prominent)
-2.  The Supporting Essay (Left column, body text)
-3.  The Architectural Portrait (Right column, occupying 45% of the viewport width)
+1.  Primary Philosophy Statement (Static on the left)
+2.  The Interactive Timeline Slider (Bottom center)
+3.  The Dynamic Photographic Viewport (Right)
+4.  The Dynamic Narrative Fragment (Beside the viewport)
 
 ##### Transition into Next Section
-The image on the right slowly fades into the background as the layout transitions into a structured, four-column spatial grid where the paths are presented.
+As the visitor completes their scrub and scrolls downward, the horizontal filmstrip container slides gracefully off-screen to the right, and the timeline track dissolves, opening the space to reveal the four structured pathways of Section 4.
 
 ##### Things to Avoid
-*   Do not use vector graphics of ladders, staircases, or flight paths.
-*   Do not use stock photography of smiling corporate workers in suits.
-*   Do not write about features, tools, or technology.
+*   Do not write long blocks of explanation. Let the interactive stories prove the thesis.
+*   Do not use generic UI slider components. The slider must feel like a premium physical dial.
+*   Do not make the slider auto-play. It must respond directly and solely to human touch.
 
 ##### Success Criteria
-The visitor understands CareerFlyght's unique positioning: this is a lifelong partner for decision-making, not a temporary job search tool.
+The user actively drags the slider, spending at least 15–20 seconds exploring the different lives and transitions. They walk away with a visceral understanding that CareerFlyght understands every stage of life.
 
 ---
 
@@ -290,13 +314,17 @@ The visitor feels an immediate sensation of relief. They are not broken. Their r
 
 They scroll again.
 
-The background warms back to a soft, natural limestone color. An elegant editorial layout appears. On the right is a stunning, quiet portrait of a woman looking out a window. Her face is calm, thoughtful, and authentic. There is no artificial studio lighting. As the visitor’s cursor drifts near her, a small, hand-scribed note appears: *“Elena. Architect, turned organic winemaker. Age 41.”*
+The background warms back to a soft, natural limestone color. Instead of finding a wall of text, they discover **The Lifeline Scrub**—a beautifully designed timeline layout that spans generations. At the bottom, a tactile dial resting at *Age 16* immediately catches their attention. Beside the dial, a portrait of a student, *Leo*, sits quietly in the soft light.
 
-On the left, a beautiful essay begins to unfold. It describes a philosophy of careers as a sequence of horizons. It explains that CareerFlyght was built because we do not have structures to guide us through these natural human crossings.
+They grab the dial and drag it to the right.
+
+The viewport responds instantly. As they scrub to *Age 32*, the student’s image cross-fades into a rich portrait of *Elena*, standing amongst architectural models in a sunlit loft. Her narrative shifts: *“Elena. Architect, navigating the transition from structured service to independent creation.”* The visitor scrubs further, moving the dial to *Age 48*, and then *Age 60*. Each stop reveals a different human transition, a different face, and a different path.
+
+The interactive exploration is mesmerizingly smooth. The visitor realizes they are looking at a living map of the human career. The philosophy is no longer just words on a page—it is a tactile truth they have just physically touched.
 
 They scroll once more.
 
-The visual essay gives way to four quiet, structured pathways. The layout is clean and perfectly balanced. There are no flashy boxes, no pricing options, and no sales copy. Just four simple entryways, each labeled with an elegant title: *WhatCanIBe*, *9thBox*, *CareerFlyght Executive*, and *CHRO4SME*.
+The visual timeline fades gracefully, revealing four quiet, structured pathways. The layout is clean and perfectly balanced. There are no flashy boxes, no pricing options, and no sales copy. Just four simple entryways, each labeled with an elegant title: *WhatCanIBe*, *9thBox*, *CareerFlyght Executive*, and *CHRO4SME*.
 
 The visitor looks at the options. For the first time in months, they do not feel overwhelmed by choices. They do not feel like they are entering a marketing funnel.
 
