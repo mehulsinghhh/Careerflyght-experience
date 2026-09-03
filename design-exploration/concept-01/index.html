@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerFlyght — Concept 01: The Architectural Monolith</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Prototype Viewport Toolbar (Prototype inspection control) -->
+    <div class="prototype-bar">
+        <div class="proto-info">
+            <span class="proto-tag">PROTOTYPE 01</span>
+            <span class="proto-title">THE ARCHITECTURAL MONOLITH</span>
+        </div>
+        <div class="proto-viewport-toggle">
+            <button class="proto-btn active" id="viewDesktop">Desktop View</button>
+            <button class="proto-btn" id="viewMobile">Mobile View</button>
+        </div>
+    </div>
+
+    <!-- Prototype Canvas Wrapper -->
+    <div class="site-wrapper" id="siteWrapper">
+        <!-- Navigation -->
+        <header class="arch-nav">
+            <div class="nav-brand">CAREERFLYGHT</div>
+            <div class="nav-links">
+                <a href="#hero">Overview</a>
+                <a href="#clusters">Architectural Index</a>
+                <a href="#influence">Exhibition Wall</a>
+                <a href="#neev">The Pillars</a>
+            </div>
+            <a href="#neev" class="nav-inquire">Inquire</a>
+        </header>
+
+        <!-- SECTION 1: HERO -->
+        <section class="arch-hero" id="hero">
+            <div class="hero-left">
+                <span class="arch-meta">EXECUTIVE PAVILION // 01</span>
+                <h1 class="hero-title">
+                    <span>Best of Work.</span>
+                    <span>Best of Jobs.</span>
+                    <span class="highlight">For Life.</span>
+                </h1>
+                <p class="hero-body">
+                    We spend our lives making career choices. We spend very little time understanding them. CareerFlyght helps you discover the opportunities that are best for you — accelerating your journey towards purposeful progress.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#clusters" class="arch-link-cta">Explore the Horizons <span class="arrow">→</span></a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="architectural-niche">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000" alt="Architectural Light Niche" class="niche-img">
+                    <div class="niche-caption">Light & Structure — Contemporary Atelier, Zurich</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: CAREER CLUSTERS (Vertical Monolithic Rows) -->
+        <section class="arch-section" id="clusters">
+            <div class="section-header">
+                <span class="arch-meta">TAXONOMY INDEX // 02</span>
+                <h2 class="section-title">The Fourteen Career Clusters</h2>
+                <p class="section-subtitle">Your Career Cluster is your North Star. Select a monolith row to open its spatial descriptor.</p>
+            </div>
+
+            <div class="monolith-list">
+                <div class="monolith-row" data-index="1">
+                    <div class="row-header">
+                        <span class="row-num">01</span>
+                        <h3 class="row-title">Agriculture, Food & Natural Resources</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Stewardship of land, sustainable food systems, natural resource management, and environmental futures.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="2">
+                    <div class="row-header">
+                        <span class="row-num">02</span>
+                        <h3 class="row-title">Architecture & Construction</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Designing, planning, managing, building, and maintaining the physical human environment.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="3">
+                    <div class="row-header">
+                        <span class="row-num">03</span>
+                        <h3 class="row-title">Arts, AV Technology & Communications</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Designing, producing, exhibiting, performing, writing, and publishing multimedia content.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="4">
+                    <div class="row-header">
+                        <span class="row-num">04</span>
+                        <h3 class="row-title">Business Management & Administration</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Planning, organizing, directing, and evaluating business functions essential to efficient operations.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="5">
+                    <div class="row-header">
+                        <span class="row-num">05</span>
+                        <h3 class="row-title">Education & Training</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Planning, managing, and providing education and training services, plus related learning support.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="6">
+                    <div class="row-header">
+                        <span class="row-num">06</span>
+                        <h3 class="row-title">Finance</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Services for financial and investment planning, banking, insurance, and business financial management.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="7">
+                    <div class="row-header">
+                        <span class="row-num">07</span>
+                        <h3 class="row-title">Government & Public Administration</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Governance, national security, vital statistics, revenue, regulation, and political administration.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="8">
+                    <div class="row-header">
+                        <span class="row-num">08</span>
+                        <h3 class="row-title">Health Science</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Planning, managing, and providing therapeutic services, diagnostic services, and health informatics.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="9">
+                    <div class="row-header">
+                        <span class="row-num">09</span>
+                        <h3 class="row-title">Hospitality & Tourism</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Management, marketing, and operations of restaurants, lodging, attractions, and travel services.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="10">
+                    <div class="row-header">
+                        <span class="row-num">10</span>
+                        <h3 class="row-title">Human Services</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Preparing individuals for employment in pathways that relate to families and human needs.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="11">
+                    <div class="row-header">
+                        <span class="row-num">11</span>
+                        <h3 class="row-title">Information Technology</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Building, testing, managing, and supporting hardware, software, multimedia, and systems integration.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="12">
+                    <div class="row-header">
+                        <span class="row-num">12</span>
+                        <h3 class="row-title">Manufacturing</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Planning, managing, and performing the processing of materials into intermediate or final products.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="13">
+                    <div class="row-header">
+                        <span class="row-num">13</span>
+                        <h3 class="row-title">Marketing, Sales & Service</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Planning, managing, and performing marketing activities to reach organizational objectives.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+                <div class="monolith-row" data-index="14">
+                    <div class="row-header">
+                        <span class="row-num">14</span>
+                        <h3 class="row-title">STEM (Science, Tech, Engineering & Math)</h3>
+                        <span class="row-indicator">+</span>
+                    </div>
+                    <div class="row-content">
+                        <p class="row-desc">Planning, managing, and providing scientific research and professional technical services.</p>
+                        <div class="row-action"><a href="#" class="row-btn">Enter Cluster Horizon →</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: HALL OF INFLUENCE (Exhibition Gallery Wall) -->
+        <section class="arch-section dark-wall" id="influence">
+            <div class="section-header light-text">
+                <span class="arch-meta">EXHIBITION WALL // 03</span>
+                <h2 class="section-title">Hall of Influence</h2>
+                <p class="section-subtitle">We all need motivation. Who better to motivate us than those who have ‘already been there and done that’?</p>
+            </div>
+
+            <div class="exhibition-grid">
+                <div class="exhibition-plaque">
+                    <div class="plaque-image">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Elena Vance">
+                    </div>
+                    <div class="plaque-info">
+                        <span class="plaque-role">ARCHITECTURAL DIRECTOR</span>
+                        <h3 class="plaque-name">Elena Vance</h3>
+                        <p class="plaque-quote">“Transitioning from structured service to independent creation required unlearning the safety of corporate titles.”</p>
+                    </div>
+                </div>
+                <div class="exhibition-plaque">
+                    <div class="plaque-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Marcus Thorne">
+                    </div>
+                    <div class="plaque-info">
+                        <span class="plaque-role">CHIEF STRATEGY OFFICER</span>
+                        <h3 class="plaque-name">Marcus Thorne</h3>
+                        <p class="plaque-quote">“At 48, aligning institutional power with personal truth was not a risk—it was a necessity for survival.”</p>
+                    </div>
+                </div>
+                <div class="exhibition-plaque">
+                    <div class="plaque-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Dr. Sarah Lin">
+                    </div>
+                    <div class="plaque-info">
+                        <span class="plaque-role">BIOTECH ADVISOR</span>
+                        <h3 class="plaque-name">Dr. Sarah Lin</h3>
+                        <p class="plaque-quote">“Mentorship is harvesting a lifetime of choices and passing the seeds to those standing at the threshold.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: NEEV (Structural Architectural Pillars) -->
+        <section class="arch-section" id="neev">
+            <div class="section-header flex-header">
+                <div>
+                    <span class="arch-meta">PROPRIETARY FRAMEWORK // 04</span>
+                    <h2 class="section-title">The Structural Pillars: NEEV</h2>
+                    <p class="section-subtitle">Knowledge, Experience, Exposure, and Values work together as interconnected structural columns.</p>
+                </div>
+                <div class="perspective-toggle-box">
+                    <span class="toggle-label">Perspective:</span>
+                    <button class="perspective-btn active" id="btnNeev">NEEV (Bedrock → Crown)</button>
+                    <button class="perspective-btn" id="btnVeen">VEEN (Legacy → Foundation)</button>
+                </div>
+            </div>
+
+            <div class="pillars-container" id="pillarsContainer">
+                <div class="pillar" data-pillar="K">
+                    <div class="pillar-top"><span class="pillar-tag">01</span><span class="pillar-mode-tag">FOUNDATION</span></div>
+                    <h3 class="pillar-title">Knowledge</h3>
+                    <p class="pillar-body">The intellectual bedrock. Academic preparation, deep domain understanding, and structured cognitive capability.</p>
+                    <div class="pillar-bar"><div class="pillar-fill"></div></div>
+                </div>
+                <div class="pillar" data-pillar="E1">
+                    <div class="pillar-top"><span class="pillar-tag">02</span><span class="pillar-mode-tag">CAPABILITY</span></div>
+                    <h3 class="pillar-title">Experience</h3>
+                    <p class="pillar-body">Lived practice and battle-tested execution. The wisdom gained through trial, failure, and accomplishment.</p>
+                    <div class="pillar-bar"><div class="pillar-fill"></div></div>
+                </div>
+                <div class="pillar" data-pillar="E2">
+                    <div class="pillar-top"><span class="pillar-tag">03</span><span class="pillar-mode-tag">PERSPECTIVE</span></div>
+                    <h3 class="pillar-title">Exposure</h3>
+                    <p class="pillar-body">Network breadth, cross-industry vision, and real-world awareness of unspoken possibilities.</p>
+                    <div class="pillar-bar"><div class="pillar-fill"></div></div>
+                </div>
+                <div class="pillar" data-pillar="V">
+                    <div class="pillar-top"><span class="pillar-tag">04</span><span class="pillar-mode-tag">CROWN</span></div>
+                    <h3 class="pillar-title">Values</h3>
+                    <p class="pillar-body">The defining North Star. Personal ethics, purpose, alignment, and moral clarity that guide every decision.</p>
+                    <div class="pillar-bar"><div class="pillar-fill"></div></div>
+                </div>
+            </div>
+            <div class="neev-status-banner" id="neevStatusText">
+                Active Paradigm: <strong>NEEV</strong> — Building upward from technical Knowledge to personal Values alignment.
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="arch-footer">
+            <div>© 2026 CareerFlyght — Executive Architectural Pavilion.</div>
+            <div class="footer-note">Confidence through subtraction.</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

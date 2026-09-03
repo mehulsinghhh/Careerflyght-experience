@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerFlyght — Concept 03: The Human Monograph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Garamond+Premier+Pro&family=Georgia:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Prototype Inspector Toolbar -->
+    <div class="prototype-bar">
+        <div class="proto-info">
+            <span class="proto-tag">PROTOTYPE 03</span>
+            <span class="proto-title">THE HUMAN MONOGRAPH</span>
+        </div>
+        <div class="proto-viewport-toggle">
+            <button class="proto-btn active" id="viewDesktop">Desktop View</button>
+            <button class="proto-btn" id="viewMobile">Mobile View</button>
+        </div>
+    </div>
+
+    <!-- Site Wrapper -->
+    <div class="site-wrapper" id="siteWrapper">
+        <!-- Floating Literary Header -->
+        <header class="mono-nav">
+            <div class="nav-brand">CareerFlyght <span>/ Monograph Edition</span></div>
+            <div class="nav-links">
+                <a href="#hero">Prologue</a>
+                <a href="#chapters">Chapters</a>
+                <a href="#stories">Oral Histories</a>
+                <a href="#currents">The Currents</a>
+            </div>
+            <a href="#stories" class="nav-btn">Read Stories</a>
+        </header>
+
+        <!-- SECTION 1: HERO (PROLOGUE) -->
+        <section class="mono-hero" id="hero">
+            <div class="hero-backdrop">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1600" alt="Sarah, Biographical Portrait" class="backdrop-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <span class="mono-meta">PROLOGUE // MONOGRAPH N° 04</span>
+                <h1 class="hero-title">Best of Work. Best of Jobs. <em>For Life.</em></h1>
+                <p class="hero-quote">“We spend our lives making career choices. We spend very little time understanding them.”</p>
+                <div class="hero-cta-box">
+                    <a href="#chapters" class="mono-cta-btn">Begin Reading the Chapters ↓</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: CAREER CLUSTERS (14 Editorial Story Chapters) -->
+        <section class="mono-section" id="chapters">
+            <div class="section-header">
+                <span class="mono-meta">CHAPTERS OF VOCATION // 02</span>
+                <h2 class="section-title">Fourteen Spheres of Human Endeavor</h2>
+                <p class="section-subtitle">Every cluster represents an evolving chapter in a person's life journey.</p>
+            </div>
+
+            <div class="chapters-grid">
+                <div class="chapter-card" data-ch="01">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="card-content">
+                        <span class="card-num">CHAPTER 01</span>
+                        <h3 class="card-title">Agriculture, Food & Natural Resources</h3>
+                        <p class="card-quote">“Stewardship of land and nourishment across generations.”</p>
+                    </div>
+                </div>
+                <div class="chapter-card" data-ch="02">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="card-content">
+                        <span class="card-num">CHAPTER 02</span>
+                        <h3 class="card-title">Architecture & Construction</h3>
+                        <p class="card-quote">“Designing physical spaces where human stories unfold.”</p>
+                    </div>
+                </div>
+                <div class="chapter-card" data-ch="03">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="card-content">
+                        <span class="card-num">CHAPTER 03</span>
+                        <h3 class="card-title">Arts, AV Tech & Communications</h3>
+                        <p class="card-quote">“Giving voice and form to human expression.”</p>
+                    </div>
+                </div>
+                <div class="chapter-card" data-ch="04">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="card-content">
+                        <span class="card-num">CHAPTER 04</span>
+                        <h3 class="card-title">Business Management & Admin</h3>
+                        <p class="card-quote">“Orchestrating human talent toward collective purpose.”</p>
+                    </div>
+                </div>
+                <div class="chapter-card" data-ch="05">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="card-content">
+                        <span class="card-num">CHAPTER 05</span>
+                        <h3 class="card-title">Education & Training</h3>
+                        <p class="card-quote">“Passing the lamp of wisdom to those who follow.”</p>
+                    </div>
+                </div>
+                <div class="chapter-card" data-ch="06">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="card-content">
+                        <span class="card-num">CHAPTER 06</span>
+                        <h3 class="card-title">Finance</h3>
+                        <p class="card-quote">“Allocating trust and resources to build tomorrow.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: HALL OF INFLUENCE (Oral Histories & Documentary Profiles) -->
+        <section class="mono-section dark-paper" id="stories">
+            <div class="section-header">
+                <span class="mono-meta light-meta">ORAL HISTORIES // 03</span>
+                <h2 class="section-title light-title">The Hall of Influence</h2>
+                <p class="section-subtitle light-sub">Listen to authentic audio accounts of leaders who navigated profound career crossroads.</p>
+            </div>
+
+            <div class="stories-flex">
+                <div class="story-main-feature">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Marcus Thorne" class="story-portrait">
+                    <div class="story-content">
+                        <span class="story-tag">FEATURED MONOGRAPH</span>
+                        <h3 class="story-name">Marcus Thorne, 48</h3>
+                        <p class="story-excerpt">“I reached the peak of institutional banking, only to realize I had lost the sound of my own voice. Transitioning wasn't about money; it was about reclaiming alignment.”</p>
+                        <div class="audio-player-box">
+                            <button class="audio-play-btn" id="audioPlayBtn">▶ Listen to Oral History (3:42)</button>
+                            <span class="audio-label">Episode 12: Leaving Executive Safety</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: NEEV (Interwoven Lifeline Currents) -->
+        <section class="mono-section" id="currents">
+            <div class="section-header flex-header">
+                <div>
+                    <span class="mono-meta">THE LIFELINE // 04</span>
+                    <h2 class="section-title">The Four Lifeline Currents</h2>
+                    <p class="section-subtitle">Knowledge, Experience, Exposure, and Values woven as continuous strands throughout life.</p>
+                </div>
+                <div class="narrative-toggle-box">
+                    <button class="narrative-btn active" id="btnBuilderArc">The Builder's Arc (NEEV)</button>
+                    <button class="narrative-btn" id="btnVisionaryArc">The Visionary's Arc (VEEN)</button>
+                </div>
+            </div>
+
+            <div class="currents-stack" id="currentsStack">
+                <div class="current-band c-k">
+                    <span class="current-num">01</span>
+                    <h3 class="current-title">Knowledge</h3>
+                    <p class="current-text">The foundational learning and intellectual discipline accumulated through study and inquiry.</p>
+                </div>
+                <div class="current-band c-e1">
+                    <span class="current-num">02</span>
+                    <h3 class="current-title">Experience</h3>
+                    <p class="current-text">The lived practice, triumphs, and setbacks forged through real-world execution.</p>
+                </div>
+                <div class="current-band c-e2">
+                    <span class="current-num">03</span>
+                    <h3 class="current-title">Exposure</h3>
+                    <p class="current-text">The expanding perspective gained by connecting with diverse people and environments.</p>
+                </div>
+                <div class="current-band c-v">
+                    <span class="current-num">04</span>
+                    <h3 class="current-title">Values</h3>
+                    <p class="current-text">The deep moral purpose and internal alignment that govern every meaningful choice.</p>
+                </div>
+            </div>
+
+            <div class="narrative-status" id="narrativeStatus">
+                Current Arc: <strong>The Builder's Arc (NEEV)</strong> — Accumulating capability from foundational Knowledge upward to personal Values.
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mono-footer">
+            <div>CareerFlyght Monograph Journal © 2026. Printed digitally for reflective minds.</div>
+            <div>Confidence through subtraction.</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
