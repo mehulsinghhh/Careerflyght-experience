@@ -1,0 +1,439 @@
+/* CAREERFLYGHT — CONCEPT 05: CONTEMPORARY ASYMMETRY */
+
+:root {
+    --color-bg: #EAE8E2;
+    --color-surface: #F7F6F2;
+    --color-navy: #0B1320;
+    --color-olive: #8A7D4B;
+    --color-text: #141414;
+    --color-muted: #666660;
+    --font-mono: 'Space Mono', monospace;
+    --font-display: 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #060A12;
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* PROTOTYPE TOOLBAR */
+.prototype-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 9999;
+    border-bottom: 1px solid #333;
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+.proto-tag {
+    background: var(--color-olive);
+    color: #fff;
+    padding: 2px 8px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.proto-title {
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.proto-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #888;
+    padding: 4px 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.proto-btn.active, .proto-btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* SITE WRAPPER */
+.site-wrapper {
+    margin-top: 44px;
+    background-color: var(--color-bg);
+    min-height: calc(100vh - 44px);
+    width: 100%;
+    display: flex;
+    transition: max-width 0.4s ease, margin 0.4s ease;
+}
+
+.site-wrapper.mobile-simulated {
+    max-width: 390px;
+    margin: 64px auto 40px auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* SIDEBAR BRANDING */
+.asym-sidebar {
+    width: 60px;
+    background: var(--color-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.side-brand {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--color-olive);
+    font-weight: bold;
+}
+
+/* MAIN CONTENT CANVAS */
+.asym-main {
+    flex-grow: 1;
+    background: var(--color-bg);
+}
+
+/* ASYMMETRIC NAV */
+.asym-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 64px;
+    background: var(--color-surface);
+    border-bottom: 1px solid #DEDCD5;
+}
+
+.nav-mark {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--color-navy);
+}
+
+.nav-menu a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+
+.nav-cta {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: var(--color-navy);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO ASYMMETRIC STACK */
+.asym-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding: 80px 64px;
+    gap: 48px;
+    align-items: center;
+}
+
+.asym-meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-olive);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.hero-title {
+    font-size: 72px;
+    line-height: 0.95;
+    color: var(--color-navy);
+    margin-bottom: 24px;
+}
+
+.hero-title span {
+    display: block;
+}
+
+.line-bold { font-weight: 800; }
+.line-italic { font-family: var(--font-display); font-style: italic; font-weight: 400; }
+.line-bold.accent { color: var(--color-olive); }
+
+.hero-image-card {
+    position: relative;
+}
+
+.hero-portrait {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    filter: grayscale(15%);
+    border-radius: 4px;
+}
+
+.floating-quote-card {
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    background: var(--color-surface);
+    padding: 28px;
+    border: 1px solid #DEDCD5;
+    max-width: 360px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.float-text {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--color-navy);
+    margin-bottom: 12px;
+}
+
+.float-author {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-olive);
+    display: block;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.asym-section {
+    padding: 112px 64px;
+    border-top: 1px solid #DEDCD5;
+}
+
+.section-header {
+    margin-bottom: 48px;
+}
+
+.section-header.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--color-navy);
+}
+
+/* MASONRY STACK (CAREER CLUSTERS) */
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.masonry-card {
+    background: var(--color-surface);
+    padding: 36px 28px;
+    border: 1px solid #DEDCD5;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.masonry-card:hover {
+    background: var(--color-navy);
+    color: #fff;
+    transform: translateY(-6px);
+}
+
+.card-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-olive);
+    display: block;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-body {
+    font-size: 14px;
+    color: var(--color-muted);
+}
+
+.masonry-card:hover .card-body {
+    color: #AAA;
+}
+
+/* DARK COVER (HALL OF INFLUENCE) */
+.asym-section.dark-cover {
+    background: var(--color-navy);
+    color: #fff;
+}
+
+.light-text .section-title { color: #fff; }
+
+.cover-spread {
+    position: relative;
+    height: 520px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.cover-headline-overlay {
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+    max-width: 600px;
+}
+
+.cover-issue {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-olive);
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.cover-name {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.cover-dek {
+    font-size: 18px;
+    color: #DDD;
+}
+
+/* PHYSICAL DECK (NEEV) */
+.deck-btn {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    background: var(--color-navy);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.physical-deck {
+    position: relative;
+    height: 380px;
+    margin-bottom: 32px;
+}
+
+.deck-card {
+    position: absolute;
+    width: 100%;
+    background: var(--color-surface);
+    border: 1px solid #DEDCD5;
+    padding: 36px 48px;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card-strata {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-olive);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card-heading {
+    font-family: var(--font-display);
+    font-size: 28px;
+    color: var(--color-navy);
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 15px;
+    color: var(--color-text);
+}
+
+.deck-status {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: #E0DDD5;
+    padding: 16px 24px;
+}
+
+.deck-status strong {
+    color: var(--color-olive);
+}
+
+/* FOOTER */
+.asym-footer {
+    padding: 40px 64px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-muted);
+    background: var(--color-surface);
+    border-top: 1px solid #DEDCD5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .site-wrapper { flex-direction: column; }
+    .asym-sidebar { width: 100%; height: 40px; }
+    .side-brand { writing-mode: horizontal-tb; transform: none; }
+    .asym-nav { padding: 20px; flex-direction: column; gap: 12px; }
+    .asym-hero { grid-template-columns: 1fr; padding: 40px 20px; }
+    .hero-title { font-size: 42px; }
+    .floating-quote-card { position: static; margin-top: 20px; max-width: 100%; }
+    .asym-section { padding: 48px 20px; }
+    .masonry-grid { grid-template-columns: 1fr; }
+    .cover-spread { height: 360px; }
+    .cover-name { font-size: 32px; }
+    .cover-headline-overlay { left: 20px; bottom: 20px; }
+    .asym-footer { padding: 24px 20px; flex-direction: column; gap: 8px; }
+}

@@ -1,0 +1,477 @@
+/* CAREERFLYGHT — CONCEPT 04: THE CAREER ATLAS */
+
+:root {
+    --color-bg: #F5F4EF;
+    --color-surface: #EBEAE5;
+    --color-indigo: #1E2A3A;
+    --color-amber: #D97724;
+    --color-gray: #8E908A;
+    --color-border: #D8D6CE;
+    --font-mono: 'Space Mono', monospace;
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0F1621;
+    color: var(--color-indigo);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* PROTOTYPE INSPECTOR TOOLBAR */
+.prototype-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 9999;
+    border-bottom: 1px solid #333;
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+.proto-tag {
+    background: var(--color-amber);
+    color: #fff;
+    padding: 2px 8px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.proto-title {
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.proto-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #888;
+    padding: 4px 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.proto-btn.active, .proto-btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* SITE WRAPPER */
+.site-wrapper {
+    margin-top: 44px;
+    background-color: var(--color-bg);
+    min-height: calc(100vh - 44px);
+    width: 100%;
+    transition: max-width 0.4s ease, margin 0.4s ease;
+}
+
+.site-wrapper.mobile-simulated {
+    max-width: 390px;
+    margin: 64px auto 40px auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* NAV */
+.atlas-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 64px;
+    border-bottom: 1px solid var(--color-border);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    background: var(--color-surface);
+}
+
+.nav-coord {
+    color: var(--color-amber);
+    font-weight: bold;
+}
+
+.nav-brand {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-brand span {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-gray);
+}
+
+.nav-links a {
+    color: var(--color-indigo);
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+.nav-btn {
+    color: var(--color-amber);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO TOPOGRAPHIC */
+.atlas-hero {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 64px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.topographic-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.topo-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    text-align: center;
+}
+
+.atlas-meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-amber);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: 56px;
+    line-height: 1.15;
+    color: var(--color-indigo);
+    margin-bottom: 24px;
+}
+
+.hero-title span {
+    color: var(--color-amber);
+}
+
+.hero-body {
+    font-size: 16px;
+    color: var(--color-indigo);
+    margin-bottom: 36px;
+}
+
+.atlas-cta-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #fff;
+    background: var(--color-indigo);
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+}
+
+.atlas-cta-btn:hover {
+    background: var(--color-amber);
+}
+
+/* SECTIONS */
+.atlas-section {
+    padding: 96px 64px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.section-header {
+    margin-bottom: 48px;
+}
+
+.section-header.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 38px;
+    color: var(--color-indigo);
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: var(--color-gray);
+}
+
+/* MAP FIELD (CAREER CLUSTERS) */
+.map-field {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.map-node {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.map-node:hover, .map-node.active {
+    background: #E0DEC3;
+    border-color: var(--color-amber);
+}
+
+.map-node.active::before {
+    content: "⊕";
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: var(--color-amber);
+    font-family: var(--font-mono);
+}
+
+.node-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-amber);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.node-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.node-detail-card {
+    background: var(--color-indigo);
+    color: #fff;
+    padding: 24px 32px;
+    border-radius: 4px;
+}
+
+.detail-coord {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-amber);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.detail-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.detail-desc {
+    font-size: 14px;
+    color: #CCC;
+}
+
+/* DARK CHART (HALL OF INFLUENCE) */
+.atlas-section.dark-chart {
+    background: var(--color-indigo);
+    color: #fff;
+}
+
+.light-text .section-title { color: #fff; }
+.light-text .section-subtitle { color: #aaa; }
+
+.routes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.route-card {
+    background: #27364B;
+    border: 1px solid #384A63;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.route-id {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-amber);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.route-name {
+    font-family: var(--font-display);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.route-path {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: #AAA;
+    margin-bottom: 20px;
+    background: #1B2635;
+    padding: 12px 16px;
+    border-radius: 2px;
+}
+
+.path-point.active {
+    color: var(--color-amber);
+    font-weight: bold;
+}
+
+.route-log {
+    font-style: italic;
+    color: #DDD;
+    font-size: 14px;
+}
+
+/* COMPASS DIAL (NEEV) */
+.compass-mode-box {
+    display: flex;
+    gap: 8px;
+}
+
+.compass-btn {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    background: transparent;
+    border: 1px solid var(--color-indigo);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.compass-btn.active {
+    background: var(--color-indigo);
+    color: #fff;
+}
+
+.compass-rose-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.compass-dial {
+    width: 280px;
+    height: 280px;
+    border: 2px solid var(--color-indigo);
+    border-radius: 50%;
+    position: relative;
+    background: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardinal {
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-mono);
+}
+
+.cardinal.north { top: 12px; }
+.cardinal.south { bottom: 12px; }
+.cardinal.east { right: 16px; }
+.cardinal.west { left: 16px; }
+
+.dir-code {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-amber);
+    display: block;
+}
+
+.dir-name {
+    font-size: 9px;
+    color: var(--color-indigo);
+    letter-spacing: 1px;
+}
+
+.compass-needle {
+    width: 4px;
+    height: 140px;
+    background: linear-gradient(to bottom, var(--color-amber) 50%, var(--color-indigo) 50%);
+    position: absolute;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.compass-status {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 16px 24px;
+    text-align: center;
+}
+
+.compass-status strong {
+    color: var(--color-amber);
+}
+
+/* FOOTER */
+.atlas-footer {
+    padding: 40px 64px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-gray);
+    background: var(--color-surface);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .atlas-nav { padding: 16px 20px; flex-direction: column; gap: 8px; }
+    .nav-links { display: none; }
+    .hero-title { font-size: 36px; }
+    .atlas-hero { padding: 0 20px; height: 60vh; }
+    .atlas-section { padding: 48px 20px; }
+    .map-field { grid-template-columns: 1fr; }
+    .routes-container { grid-template-columns: 1fr; }
+    .section-header.flex-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .atlas-footer { padding: 24px 20px; flex-direction: column; gap: 8px; }
+}

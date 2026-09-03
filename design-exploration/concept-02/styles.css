@@ -1,0 +1,468 @@
+/* CAREERFLYGHT — CONCEPT 02: THE SWISS TAXONOMY */
+
+:root {
+    --color-bg: #F4F4F0;
+    --color-surface: #FFFFFF;
+    --color-ink: #0F1115;
+    --color-grid: #D2D2CC;
+    --color-accent: #FF4800; /* Safety Orange */
+    --color-muted: #666660;
+    --font-mono: 'Space Mono', monospace;
+    --font-sans: 'Inter', -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0A0B0D;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* PROTOTYPE TOOLBAR */
+.prototype-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 9999;
+    border-bottom: 1px solid #333;
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+.proto-tag {
+    background: var(--color-accent);
+    color: #fff;
+    padding: 2px 8px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.proto-title {
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.proto-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #888;
+    padding: 4px 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.proto-btn.active, .proto-btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* SITE WRAPPER */
+.site-wrapper {
+    margin-top: 44px;
+    background-color: var(--color-bg);
+    min-height: calc(100vh - 44px);
+    width: 100%;
+    border-left: 1px solid var(--color-grid);
+    border-right: 1px solid var(--color-grid);
+    transition: max-width 0.4s ease, margin 0.4s ease;
+}
+
+.site-wrapper.mobile-simulated {
+    max-width: 390px;
+    margin: 64px auto 40px auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* SWISS NAV DATA BAR */
+.swiss-nav {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 3fr 1.5fr;
+    border-bottom: 1px solid var(--color-ink);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    background: var(--color-surface);
+}
+
+.nav-cell {
+    padding: 16px 20px;
+    border-right: 1px solid var(--color-ink);
+    display: flex;
+    align-items: center;
+}
+
+.nav-cell:last-child {
+    border-right: none;
+}
+
+.nav-cell a {
+    color: var(--color-ink);
+    text-decoration: none;
+    margin-right: 16px;
+    font-weight: bold;
+}
+
+.nav-cell a:hover {
+    color: var(--color-accent);
+}
+
+.nav-btn {
+    color: var(--color-accent) !important;
+}
+
+/* HERO SECTION */
+.swiss-hero {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    border-bottom: 1px solid var(--color-ink);
+}
+
+.hero-col-main {
+    padding: 80px 48px;
+    border-right: 1px solid var(--color-ink);
+    background: var(--color-surface);
+}
+
+.sys-code {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.swiss-title {
+    font-family: var(--font-sans);
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -2px;
+    color: var(--color-ink);
+}
+
+.swiss-title span {
+    display: block;
+}
+
+.swiss-title .accent-text {
+    color: var(--color-accent);
+}
+
+.hero-col-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-box {
+    padding: 32px 28px;
+    border-bottom: 1px solid var(--color-ink);
+    background: var(--color-bg);
+}
+
+.data-box.highlight-box {
+    background: #E8E8E2;
+}
+
+.box-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-muted);
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.box-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-ink);
+}
+
+.hero-cta-cell {
+    padding: 32px 28px;
+    background: var(--color-ink);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.swiss-cta-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--color-surface);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.swiss-cta-btn:hover {
+    color: var(--color-accent);
+}
+
+/* SECTIONS */
+.swiss-section {
+    border-bottom: 1px solid var(--color-ink);
+    padding: 64px 48px;
+}
+
+.swiss-header {
+    margin-bottom: 40px;
+}
+
+.swiss-header.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.swiss-h2 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: var(--color-ink);
+    text-transform: uppercase;
+}
+
+/* TAXONOMY MATRIX GRID (CAREER CLUSTERS) */
+.taxonomy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid var(--color-ink);
+    background: var(--color-ink);
+    gap: 1px;
+}
+
+.tax-cell {
+    background: var(--color-surface);
+    padding: 24px 28px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.tax-cell:hover {
+    background: var(--color-ink);
+    color: var(--color-surface);
+}
+
+.tax-code {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.tax-cell:hover .tax-code {
+    color: var(--color-accent);
+}
+
+.tax-title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.tax-desc {
+    font-size: 13px;
+    color: var(--color-muted);
+}
+
+.tax-cell:hover .tax-desc {
+    color: #AAA;
+}
+
+.tax-preview-panel {
+    margin-top: 24px;
+    background: #E8E8E2;
+    border: 1px solid var(--color-ink);
+    padding: 16px 24px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+
+.panel-tag {
+    color: var(--color-accent);
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* DOSSIER TABLE (HALL OF INFLUENCE) */
+.dossier-table {
+    border: 1px solid var(--color-ink);
+    background: var(--color-surface);
+}
+
+.dossier-header-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    background: var(--color-ink);
+    color: var(--color-surface);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.dossier-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    padding: 20px;
+    border-bottom: 1px solid var(--color-grid);
+    font-size: 14px;
+    align-items: center;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+.dossier-row:last-child {
+    border-bottom: none;
+}
+
+.dossier-row:hover {
+    background: #E8E8E2;
+}
+
+.mono-code {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.sub-name {
+    font-weight: 800;
+}
+
+.status-badge {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    background: var(--color-ink);
+    color: var(--color-surface);
+    padding: 4px 8px;
+    width: fit-content;
+}
+
+/* NEEV CARTESIAN QUADRANT TENSOR */
+.tensor-control {
+    display: flex;
+    gap: 8px;
+}
+
+.tensor-btn {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    background: transparent;
+    border: 1px solid var(--color-ink);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tensor-btn.active {
+    background: var(--color-ink);
+    color: var(--color-surface);
+}
+
+.quadrant-matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--color-ink);
+    background: var(--color-ink);
+    gap: 1px;
+    margin-bottom: 24px;
+}
+
+.q-cell {
+    background: var(--color-surface);
+    padding: 36px 32px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.q-code {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.q-title {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.q-desc {
+    font-size: 14px;
+    color: var(--color-muted);
+}
+
+.vector-status {
+    background: var(--color-ink);
+    color: var(--color-surface);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 16px 24px;
+}
+
+.vector-status strong {
+    color: var(--color-accent);
+}
+
+/* FOOTER */
+.swiss-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-ink);
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+.foot-cell {
+    padding: 24px 32px;
+    border-right: 1px solid var(--color-ink);
+}
+
+.foot-cell:last-child {
+    border-right: none;
+}
+
+/* RESPONSIVE MOBILE BREAKPOINTS */
+@media (max-width: 900px) {
+    .swiss-nav { grid-template-columns: 1fr; }
+    .nav-cell { border-right: none; border-bottom: 1px solid var(--color-ink); }
+    .swiss-hero { grid-template-columns: 1fr; }
+    .hero-col-main { padding: 48px 24px; border-right: none; }
+    .swiss-title { font-size: 48px; }
+    .swiss-section { padding: 40px 20px; }
+    .taxonomy-grid { grid-template-columns: 1fr; }
+    .dossier-header-row, .dossier-row { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .quadrant-matrix { grid-template-columns: 1fr; }
+    .swiss-header.flex-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .swiss-footer { grid-template-columns: 1fr; }
+    .foot-cell { border-right: none; border-bottom: 1px solid var(--color-ink); }
+}
